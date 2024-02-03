@@ -12,16 +12,23 @@
 
     'depends': [
         'base',
-        'website'
+        'website',
+        'stock'
     ],
     'data': [
         'security/ir.model.access.csv',
+        'views/fish_info_views.xml',
         'views/fish_views.xml',
         'views/fish_templates.xml',
     ],
     'demo': [
-            'demo/demo.xml',
+        'demo/demo.xml',
+    ],
+    'assets': {
+        'web.assets_qweb': [
+            'fish/static/src/xml/fish_templates.xml',
         ],
+    },
     'installable': True,
     'application': True,
     'auto_install': False,
