@@ -28,6 +28,9 @@
         'web.assets_qweb': [
             'fish/static/src/xml/fish_templates.xml',
         ],
+        'web.assets_backend': [
+            'fish/static/src/css/fish_style.css',
+        ],
     },
     'installable': True,
     'application': True,

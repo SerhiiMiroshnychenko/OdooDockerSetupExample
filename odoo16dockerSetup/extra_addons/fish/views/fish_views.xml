@@ -10,8 +10,8 @@
                 <field name="common_name"/>
                 <field name="scientific_name"/>
                 <field name="average_size"/>
-                <button name="info" type="object" icon="fa-info-circle fa-2x"/>
-                <button name="remark" type="object" icon="fa-newspaper-o"/>
+                <button name="info" type="object" icon="fa-info-circle fa-2x" class="info-button"/>
+                <button name="remark" type="object" icon="fa-newspaper-o" class="remark-button"/>
             </tree>
         </field>
     </record>
@@ -63,7 +63,7 @@
                     <hr/>
                     <group>
                         <group>
-                            <field name="scientific_name"/>
+                            <field name="scientific_name" class="scientific"/>
                             <field name="average_size"/>
                             <field name="image"/>
                         </group>
