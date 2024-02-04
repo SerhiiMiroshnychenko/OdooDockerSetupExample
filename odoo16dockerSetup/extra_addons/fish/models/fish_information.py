@@ -25,7 +25,14 @@ class FishInformation(models.TransientModel):
     def _compute_html_fish_info(self):
         fish = self.env['fish.fish'].browse(self.fish_id)
         fish_info = f'''
-        <div style="color: red; text-align: center; font-size: 16px;">
+        <div id="demo"
+        style="color: red; text-align: center; font-size: 16px;
+        transition: color 0.3s ease;"
+        onmouseover="this.style.color='green';
+        this.style.fontWeight='bold';"
+        onmouseout="this.style.color='red';
+        this.style.fontWeight='normal';
+        ">
         <h2>{fish.common_name}</h2>
         <hr/>
         <p><i>({fish.scientific_name})</i></p>
